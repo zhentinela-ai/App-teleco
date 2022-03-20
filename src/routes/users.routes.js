@@ -9,6 +9,12 @@ import {
 
 const router = Router();
 
+// Welcome
+router.get("/login", (req, res) => {
+  res.render("index")
+})
+
+// Login
 router.post("/login", registerUsers);
 
 router.get("/login/:id", loginUsers);
