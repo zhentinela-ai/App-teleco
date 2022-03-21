@@ -1,0 +1,37 @@
+@api = http://localhost:3000/api/auth/signup
+
+### Register new User
+POST {{api}}
+Content-Type: application/json
+
+{
+  "name": "Jesus",
+  "lastName": "Caballero",
+  "email": "jcaballero@gmail.com",
+  "password": "password",
+  "age": "23"
+}
+
+### Login User
+GET {{api}}/1
+# Content-Type: application/json
+
+# {
+#   "email": "jcaballero@gmail.com",
+#   "password": "password"
+# }
+
+### Edit User
+PUT {{api}}/2
+Content-Type: application/json
+
+{
+  "name": "Jesus David",
+  "lastName": "Caballero",
+  "email": "jdcaballero@outlet.com",
+  "password": "123456",
+  "age": "23"
+}
+
+### Deleting User
+DELETE {{api}}/5
